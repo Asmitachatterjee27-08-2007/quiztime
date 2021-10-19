@@ -4,6 +4,7 @@ class Contestant
      this.index=null;
      this.answer=0;
      this.name=null;
+     
     }
     getCount(){
         db.ref("contestantCount").on("value", (data)=>{
@@ -26,4 +27,5 @@ class Contestant
            allcontestants=data.val();
        })
     }
+    
 }
